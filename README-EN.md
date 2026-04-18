@@ -2,7 +2,7 @@
 
 # Welcome to my Technical Portfolio
 
-I am an **Electrical Engineer** exploring the endless possibilities of technology. This space is dedicated to sharing ideas, projects, and insights on **automation**, the practical use of **Artificial Intelligence in various contexts**, as well as some of my **hobbies** and technological discoveries.
+I am a technology enthusiast seeking to research and explore the endless possibilities of this universe. This space is dedicated to sharing ideas, projects, and insights on automation, the practical use of Artificial Intelligence in various contexts, as well as some of my hobbies and discoveries.
 
 ### Expertise
 * **Operational Efficiency:** Consulting for the industrial sector.

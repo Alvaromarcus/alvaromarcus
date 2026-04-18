@@ -2,7 +2,7 @@
 
 # Bem-vindo ao meu Portfólio Técnico
 
-Sou um **Engenheiro Eletricista** explorando as infinitas possibilidades da tecnologia. Este espaço é dedicado a compartilhar ideias, projetos e conhecimentos sobre **automação**, o uso de **Inteligência Artificial em diversos âmbitos**, além de alguns dos meus **hobbies** e descobertas tecnológicas.
+Sou um entusiasta de tecnologia que busca pesquisar e explorar as infinitas possibilidades desse universo. Este espaço é dedicado a compartilhar ideias, projetos e conhecimentos sobre automação, o uso prático de Inteligência Artificial em diversos âmbitos, além de alguns dos meus hobbies e descobertas.
 
 ### Especialidades
 * **Eficiência Operacional:** Consultoria para o setor industrial.
