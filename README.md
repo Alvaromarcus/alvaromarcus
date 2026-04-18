@@ -2,7 +2,7 @@
 
 # Bem-vindo ao meu Portfólio Técnico
 
-Sou um **Engenheiro Eletricista** com foco em **Eficiência Operacional** e **Sistemas Inteligentes**. Este espaço é dedicado a compartilhar conhecimentos sobre transformação digital, automação industrial e o desenvolvimento de soluções inteligentes.
+Sou um **Engenheiro Eletricista** explorando as infinitas possibilidades da tecnologia. Este espaço é dedicado a compartilhar ideias, projetos e conhecimentos sobre **automação**, o uso de **Inteligência Artificial em diversos âmbitos**, além de alguns dos meus **hobbies** e descobertas tecnológicas.
 
 ### Especialidades
 * **Eficiência Operacional:** Consultoria para o setor industrial.
