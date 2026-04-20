@@ -1,11 +1,21 @@
-**Português** | [English](./README-EN.md)
+---
+layout: default
+title: ⚡ AM - Tech 🔌
+lang: pt-br
+---
+
+**Português** | [English]({{ site.baseurl }}/README-EN)
 
 # Bem-vindo ao meu Portfólio Técnico
 
 Sou um entusiasta de tecnologia que busca pesquisar e explorar as infinitas possibilidades desse universo. Este espaço é dedicado a compartilhar ideias, projetos e conhecimentos sobre automação, o uso prático de Inteligência Artificial em diversos âmbitos, além de alguns dos meus hobbies e descobertas.
 
 ### Blog / Artigos
-* [AeroBuilder: como o software moderno pode transformar um hobby analógico](https://alvaromarcus.github.io/blog/aerobuilder)
+{% for post in site.blog %}
+  {% if post.lang == 'pt-br' %}
+  * [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
+  {% endif %}
+{% endfor %}
 
 ### Assuntos
 * **Eficiência Operacional:** Consultoria para o setor industrial.
