@@ -1,4 +1,9 @@
-**Português** | [English](./aerobuilder-en.md) | [Voltar para a Home](./README.md)
+---
+layout: default
+title: AeroBuilder
+---
+
+**Português** | [English](./aerobuilder-en.html) | [Voltar para a Home](./README.md)
 
 # AeroBuilder: como o software moderno pode transformar um hobby analógico
 
