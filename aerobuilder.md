@@ -13,6 +13,8 @@ O aeromodelismo é um dos hobbies mais antigos da aviação. Por décadas, entus
 
 O AeroBuilder é uma aplicação web interativa voltada ao projeto de aviões de aeromodelismo. O usuário informa as dimensões do modelo que pretende construir, como envergadura, cordas da asa, comprimento da fuselagem e tamanho das superfícies de cauda, e a ferramenta calcula em tempo real os parâmetros aerodinâmicos fundamentais: a Corda Aerodinâmica Média (MAC), a posição do Centro de Gravidade teórico, o Ponto Neutro e a Margem Estática. Com base nesses dados, o sistema emite alertas sobre possíveis instabilidades de voo e sugere correções ao projetista. Ao final, o usuário pode exportar um template em escala 1:1 em PDF, pronto para ser impresso, recortado e colado diretamente sobre a chapa de Depron ou balsa.
 
+![Tela geral do AeroBuilder com parâmetros, vistas técnicas e assistente de voo](./assets/images/aerobuilder-tela-geral.png)
+
 O projeto suporta dois tipos de aeronave, o convencional com fuselagem e conjunto de cauda, e a asa voadora com elevons, e oferece visualização tanto em desenho técnico bidimensional com vistas superior, lateral e frontal, quanto em modelo tridimensional interativo com perfis de asa reais como o Clark-Y, NACA 4412, NACA 0012 e MH45.
 
 ## Indústria 4.0 dentro de uma garagem
@@ -36,6 +38,8 @@ A estilização usa Tailwind CSS na versão 3, com suporte completo a modo escur
 A visualização bidimensional é feita com a Canvas API nativa do navegador, sem bibliotecas de terceiros. Isso significa controle total sobre cada pixel renderizado, o que é essencial para desenho técnico onde a precisão de proporções importa. O canvas é redrawn a cada alteração de parâmetro, criando a ilusão de reatividade instantânea. A visualização tridimensional usa React Three Fiber, um wrapper declarativo para Three.js que permite descrever cenas 3D com a mesma sintaxe de componentes React, e a biblioteca Drei que fornece controles de órbita, ambiente de iluminação HDR e utilitários de geometria.
 
 Os perfis de asa são gerados matematicamente. O código implementa a equação analítica para famílias NACA de quatro dígitos, calculando a linha de curvatura, a espessura e as coordenadas de superfície superior e inferior com espaçamento de cosseno para melhor resolução nas bordas de ataque e fuga. Para o Clark-Y e o MH45, os pontos de referência tabelados são interpolados por spline cúbica antes de serem passados ao ExtrudeGeometry do Three.js. Isso garante que o modelo 3D exibido não seja uma aproximação genérica, mas uma extrusão do perfil real utilizado em aeromodelismo.
+
+![Modelo 3D de asa voadora gerado pelo AeroBuilder com perfil de asa real](./assets/images/aerobuilder-3d-asa-voadora.png)
 
 A exportação em PDF usa a biblioteca jsPDF diretamente no cliente, sem envio de dados para nenhum servidor. As páginas de template são geradas com lógica de tiling que calcula quantas folhas A4 são necessárias para acomodar as dimensões reais do modelo e insere marcadores de alinhamento em cada canto para facilitar a montagem das folhas.
 
