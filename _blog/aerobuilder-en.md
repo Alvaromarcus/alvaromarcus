@@ -3,6 +3,8 @@ layout: default
 title: "AeroBuilder (EN)"
 lang: en
 ref: aerobuilder
+description: "An analysis of how AeroBuilder software modernizes aeromodeling, applying Industry 4.0 concepts to the hobby."
+image: /assets/images/aerobuilder-tela-geral.png
 ---
 
 [Português]({{ site.baseurl }}/blog/aerobuilder) | **English** | [Back to Home]({{ site.baseurl }}/)

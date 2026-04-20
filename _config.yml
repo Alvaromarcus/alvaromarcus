@@ -1,8 +1,21 @@
 theme: jekyll-theme-cayman
 title: ⚡ AM - Tech 🔌
 description: Por Alvaro Marcus - Insights sobre Indústria 4.0 e Automação.
+url: "https://alvaromarcus.github.io"
+author: "Alvaro Marcus"
+
+twitter:
+  username: alvaromarcus
+
+social:
+  name: Alvaro Marcus
+  links:
+    - https://www.linkedin.com/in/alvaromarcus/
 
 collections:
   blog:
     output: true
     permalink: /blog/:name
+
+plugins:
+  - jekyll-seo-tag
