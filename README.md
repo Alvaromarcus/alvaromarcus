@@ -65,42 +65,26 @@ Sou desenvolvedor de software com formação em Engenharia Elétrica e Mestrado 
 
 ### 🚀 Projetos em Destaque
 
-<div align="center">
-
-<a href="https://github.com/Alvaromarcus/Airplane_model">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Alvaromarcus&repo=Airplane_model&theme=github_dark&hide_border=true&border_radius=10" />
-</a>
-<a href="https://github.com/Alvaromarcus/diagnostico-5s">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Alvaromarcus&repo=diagnostico-5s&theme=github_dark&hide_border=true&border_radius=10" />
-</a>
-
-<a href="https://github.com/Alvaromarcus/YOLOV8_label_converter">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Alvaromarcus&repo=YOLOV8_label_converter&theme=github_dark&hide_border=true&border_radius=10" />
-</a>
-<a href="https://github.com/Alvaromarcus/mlp-flight-price-prediction">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Alvaromarcus&repo=mlp-flight-price-prediction&theme=github_dark&hide_border=true&border_radius=10" />
-</a>
-
-<a href="https://github.com/Alvaromarcus/deep-regression-mlp">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Alvaromarcus&repo=deep-regression-mlp&theme=github_dark&hide_border=true&border_radius=10" />
-</a>
-<a href="https://github.com/Alvaromarcus/api_connector">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Alvaromarcus&repo=api_connector&theme=github_dark&hide_border=true&border_radius=10" />
-</a>
-
-</div>
+| Projeto | Descrição | Tecnologia |
+|---------|-----------|------------|
+| [✈️ Airplane_model](https://github.com/Alvaromarcus/Airplane_model) | Designer interativo de aeromodelos RC com verificação de estabilidade em tempo real, visualização 3D e exportação PDF 1:1 | `TypeScript` `Three.js` `Vite` |
+| [📋 diagnostico-5s](https://github.com/Alvaromarcus/diagnostico-5s) | Web app para diagnóstico 5S industrial — avaliação, scoring e relatórios | `JavaScript` |
+| [👁️ YOLOV8_label_converter](https://github.com/Alvaromarcus/YOLOV8_label_converter) | Conversão de coordenadas de polígonos VGG16 para o formato YOLOv8 | `Python` `YOLO` |
+| [✈️ mlp-flight-price-prediction](https://github.com/Alvaromarcus/mlp-flight-price-prediction) | Regressão com redes MLP para estimar preços de passagens aéreas | `Python` `Keras` |
+| [🧠 deep-regression-mlp](https://github.com/Alvaromarcus/deep-regression-mlp) | Regressão com redes MLP para estimar preços de automóveis | `Python` `Keras` |
+| [🔌 api_connector](https://github.com/Alvaromarcus/api_connector) | Conector API "Diário de Obras" com Node.js e Axios | `JavaScript` `Node.js` |
 
 ---
 
 ### 📊 GitHub Stats
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Alvaromarcus&show_icons=true&theme=github_dark&hide_border=true&border_radius=10&include_all_commits=true&count_private=true&rank_icon=github" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alvaromarcus&layout=compact&theme=github_dark&hide_border=true&border_radius=10&langs_count=8" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Alvaromarcus&show_icons=true&theme=github_dark&hide_border=true&border_radius=10&include_all_commits=true&count_private=true&rank_icon=github&cache_seconds=86400" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alvaromarcus&layout=compact&theme=github_dark&hide_border=true&border_radius=10&langs_count=8&cache_seconds=86400" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Alvaromarcus&theme=github-dark-blue&hide_border=true&border_radius=10" />
+  <img src="https://streak-stats.demolab.com/?user=Alvaromarcus&theme=github-dark-blue&hide_border=true&border_radius=10" />
 </div>
 
 ---
