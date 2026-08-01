@@ -79,8 +79,8 @@ Sou desenvolvedor de software com formação em Engenharia Elétrica e Mestrado 
 ### 📊 GitHub Stats
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Alvaromarcus&show_icons=true&theme=github_dark&hide_border=true&border_radius=10&include_all_commits=true&count_private=true&rank_icon=github&cache_seconds=86400" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alvaromarcus&layout=compact&theme=github_dark&hide_border=true&border_radius=10&langs_count=8&cache_seconds=86400" />
+  <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Alvaromarcus&show_icons=true&theme=github_dark&hide_border=true&border_radius=10&include_all_commits=true&count_private=true&rank_icon=github&cache_seconds=86400" />
+  <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Alvaromarcus&layout=compact&theme=github_dark&hide_border=true&border_radius=10&langs_count=8&cache_seconds=86400" />
 </div>
 
 <div align="center">
