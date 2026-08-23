@@ -3,6 +3,7 @@
 layout: page
 lang: pt
 permalink: /sobre/
+title: "Sobre"
 description: "Quem sou e sobre o que escrevo."
 ---
 <img src="{{ site.baseurl }}/assets/images/blog-cover.png" alt="Álvaro Marcus" width="140" height="140" style="border-radius: 50%; float: right; margin: 0 0 1rem 1.5rem; border: 1px solid var(--border);">
