@@ -14,7 +14,7 @@
 
 ### Sobre Mim
 
-Sou desenvolvedor de software com formação em Engenharia Elétrica e Mestrado em Controle e Automação. Atuo na interseção entre **software**, **sistemas embarcados** e **inteligência artificial**, com experiência prática em projetos que vão desde aplicações web full-stack até firmware para microcontroladores e modelos de visão computacional para a indústria.
+Com formação em Engenharia Elétrica e Mestrado em Controle e Automação. Desenvolvo soluções em  **software**, **sistemas embarcados** e **inteligência artificial**, com experiência prática em projetos que vão desde aplicações web full-stack até firmware para microcontroladores e modelos de visão computacional para a indústria.
 
 - Atualmente trabalhando com **TypeScript**, **Python** e **sistemas embarcados**
 - Experiência com **YOLO**, **redes neurais MLP** e **visão computacional** aplicada à indústria
