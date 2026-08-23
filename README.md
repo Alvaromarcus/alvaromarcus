@@ -74,18 +74,6 @@ Sou desenvolvedor de software com formação em Engenharia Elétrica e Mestrado 
 | [deep-regression-mlp](https://github.com/Alvaromarcus/deep-regression-mlp) | Regressão com redes MLP para estimar preços de automóveis | `Python` `Keras` |
 | [api_connector](https://github.com/Alvaromarcus/api_connector) | Conector API "Diário de Obras" com Node.js e Axios | `JavaScript` `Node.js` |
 
----
-
-### GitHub Stats
-
-<div align="center">
-  <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Alvaromarcus&show_icons=true&theme=github_dark&hide_border=true&border_radius=10&include_all_commits=true&count_private=true&rank_icon=github&cache_seconds=86400" />
-  <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Alvaromarcus&layout=compact&theme=github_dark&hide_border=true&border_radius=10&langs_count=8&cache_seconds=86400" />
-</div>
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com/?user=Alvaromarcus&theme=github-dark-blue&hide_border=true&border_radius=10" />
-</div>
 
 ---
 
