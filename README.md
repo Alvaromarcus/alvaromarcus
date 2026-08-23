@@ -75,10 +75,6 @@ Sou desenvolvedor de software com formação em Engenharia Elétrica e Mestrado 
 | [api_connector](https://github.com/Alvaromarcus/api_connector) | Conector API "Diário de Obras" com Node.js e Axios | `JavaScript` `Node.js` |
 
 
----
-
-### Blog / Artigos
-- [AeroBuilder: como o software moderno pode transformar um hobby analógico](https://alvaromarcus.github.io/blog/aerobuilder)
 
 ---
 
