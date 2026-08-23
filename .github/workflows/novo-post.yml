@@ -1,0 +1,114 @@
+name: Novo post
+
+# Cria o arquivo do post ja com o front matter preenchido.
+# Como usar: aba "Actions" -> "Novo post" -> "Run workflow" -> preencher o formulario.
+# Depois e so abrir o arquivo criado em _posts/ e escrever o texto.
+
+on:
+  workflow_dispatch:
+    inputs:
+      titulo:
+        description: "Título do post"
+        required: true
+        type: string
+      slug:
+        description: "Slug para a URL (só letras minúsculas e hífens). Ex: sensores-can-bus"
+        required: true
+        type: string
+      idioma:
+        description: "Idioma"
+        required: true
+        default: "pt"
+        type: choice
+        options: ["pt", "en"]
+      tags:
+        description: "Tags separadas por vírgula. Ex: automação, python"
+        required: false
+        default: ""
+        type: string
+      descricao:
+        description: "Resumo curto que aparece na listagem"
+        required: false
+        default: ""
+        type: string
+      data:
+        description: "Data no formato AAAA-MM-DD (vazio = hoje)"
+        required: false
+        default: ""
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  criar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Gerar o arquivo do post
+        env:
+          TITULO: ${{ inputs.titulo }}
+          SLUG: ${{ inputs.slug }}
+          IDIOMA: ${{ inputs.idioma }}
+          TAGS: ${{ inputs.tags }}
+          DESCRICAO: ${{ inputs.descricao }}
+          DATA: ${{ inputs.data }}
+        run: |
+          python3 - <<'PY'
+          import os, re, datetime, pathlib, sys
+
+          titulo = os.environ["TITULO"].strip()
+          slug = re.sub(r"[^a-z0-9-]", "", os.environ["SLUG"].strip().lower().replace(" ", "-"))
+          idioma = os.environ["IDIOMA"].strip()
+          data = os.environ["DATA"].strip() or datetime.date.today().isoformat()
+
+          if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", data):
+              sys.exit("Data invalida. Use o formato AAAA-MM-DD.")
+          if not slug:
+              sys.exit("Slug invalido.")
+
+          tags = [t.strip() for t in os.environ["TAGS"].split(",") if t.strip()]
+          tags_yaml = "[" + ", ".join('"%s"' % t.replace('"', "'") for t in tags) + "]"
+
+          descricao = os.environ["DESCRICAO"].strip().replace('"', "'")
+          nome_arquivo = "%s-%s%s.md" % (data, slug, "-en" if idioma == "en" else "")
+          caminho = pathlib.Path("_posts") / nome_arquivo
+
+          if caminho.exists():
+              sys.exit("Ja existe um post em %s" % caminho)
+
+          corpo_pt = "Escreva o texto aqui. Nao coloque um `# Titulo` no corpo:\no titulo do front matter ja vira o H1 da pagina.\n"
+          corpo_en = "Write your text here. Do not add a `# Title` in the body:\nthe front matter title already becomes the page H1.\n"
+
+          caminho.write_text(
+              "---\n"
+              'title: "%s"\n' % titulo.replace('"', "'")
+              + "date: %s\n" % data
+              + "lang: %s\n" % idioma
+              + "ref: %s\n" % slug
+              + "tags: %s\n" % tags_yaml
+              + 'description: "%s"\n' % descricao
+              + "---\n\n"
+              + (corpo_en if idioma == "en" else corpo_pt),
+              encoding="utf-8",
+          )
+
+          print("Criado:", caminho)
+          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as fh:
+              fh.write("ARQUIVO=%s\n" % caminho)
+          PY
+
+      - name: Commitar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$ARQUIVO"
+          git commit -m "post: rascunho de ${{ inputs.titulo }}"
+          git push
+
+      - name: Onde editar
+        run: |
+          echo "### Rascunho criado" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Edite o texto em: [\`$ARQUIVO\`](https://github.com/${{ github.repository }}/edit/${{ github.ref_name }}/$ARQUIVO)" >> $GITHUB_STEP_SUMMARY
