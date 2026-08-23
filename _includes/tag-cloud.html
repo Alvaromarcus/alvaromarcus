@@ -1,0 +1,31 @@
+{%- comment -%}
+  Nuvem de tags calculada apenas sobre os posts do idioma corrente.
+  Parametros:
+    include.posts    -> colecao de posts ja filtrada por idioma
+    include.lang     -> "pt" ou "en"
+    include.filter   -> "true" para ativar o filtro em JS (usado na home)
+{%- endcomment -%}
+{%- assign t = site.data.i18n[include.lang] -%}
+{%- assign all_tags = "" | split: "" -%}
+{%- for post in include.posts -%}
+  {%- assign all_tags = all_tags | concat: post.tags -%}
+{%- endfor -%}
+{%- assign unique_tags = all_tags | uniq | sort -%}
+
+{% if unique_tags.size > 0 %}
+<nav class="tag-cloud{% if include.filter %} is-filter{% endif %}"
+     {% if include.filter %}data-tag-filter{% endif %}
+     aria-label="{{ t.tags_title }}">
+  {% if include.filter %}
+  <button type="button" class="tag tag-all is-active" data-tag="">{{ t.filter_all }}</button>
+  {% endif %}
+  {%- for tag in unique_tags -%}
+    {%- assign tag_slug = tag | slugify -%}
+    {%- assign tag_count = 0 -%}
+    {%- for post in include.posts -%}
+      {%- if post.tags contains tag -%}{%- assign tag_count = tag_count | plus: 1 -%}{%- endif -%}
+    {%- endfor -%}
+    <a class="tag" href="{{ t.tags_url | relative_url }}#{{ tag_slug }}" data-tag="{{ tag_slug }}">#{{ tag }}<span class="tag-count">{{ tag_count }}</span></a>
+  {%- endfor -%}
+</nav>
+{% endif %}

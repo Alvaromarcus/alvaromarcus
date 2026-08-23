@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{%- assign lang = page.lang | default: site.lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign posts = site.posts | where: "lang", lang -%}
+
+<div class="home-intro prose">
+  {% if page.title %}<h1 class="page-title">{{ page.title }}</h1>{% endif %}
+  {{ content }}
+</div>
+
+{% include tag-cloud.html posts=posts lang=lang filter="yes" %}
+
+<p class="filter-status" data-filter-status hidden>
+  {{ t.filtering_by }} <strong data-filter-label></strong> &mdash;
+  <button type="button" class="link-button" data-filter-clear>{{ t.clear_filter }}</button>
+</p>
+
+{% include post-list.html posts=posts lang=lang %}

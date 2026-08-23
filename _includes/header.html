@@ -1,0 +1,42 @@
+{%- assign lang = page.lang | default: site.lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- if lang == "pt" -%}
+  {%- assign other = site.data.i18n["en"] -%}
+{%- else -%}
+  {%- assign other = site.data.i18n["pt"] -%}
+{%- endif -%}
+{%- comment -%}
+  Se a pagina for um post traduzido, o link de idioma vai direto para
+  a traducao. Caso contrario, vai para a home do outro idioma.
+{%- endcomment -%}
+{%- assign other_url = other.home_url | relative_url -%}
+{%- if page.ref -%}
+  {%- assign siblings = site.posts | where: "ref", page.ref -%}
+  {%- for sibling in siblings -%}
+    {%- if sibling.lang != lang -%}
+      {%- assign other_url = sibling.url | relative_url -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="site-title" href="{{ t.home_url | relative_url }}">{{ site.title }}</a>
+
+    <nav class="site-nav" aria-label="{{ t.nav_home }}">
+      <a href="{{ t.home_url | relative_url }}">{{ t.nav_home }}</a>
+      <a href="{{ t.tags_url | relative_url }}">{{ t.nav_tags }}</a>
+      <a href="{{ t.about_url | relative_url }}">{{ t.nav_about }}</a>
+      <a href="https://github.com/{{ site.github_user }}" rel="me noopener">{{ t.nav_github }} ↗</a>
+    </nav>
+
+    <div class="header-tools">
+      <span class="lang-switch">
+        <span class="lang-current" aria-current="true">{{ t.this_lang_code }}</span><span class="lang-sep">|</span><a href="{{ other_url }}" hreflang="{{ other.locale }}" title="{{ other.other_lang_name }}">{{ t.other_lang_code }}</a>
+      </span>
+      <button type="button" class="theme-toggle" data-theme-toggle aria-label="{{ t.toggle_theme }}" title="{{ t.toggle_theme }}">
+        <span aria-hidden="true" data-theme-icon>◐</span>
+      </button>
+    </div>
+  </div>
+</header>
