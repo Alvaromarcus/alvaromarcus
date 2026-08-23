@@ -7,7 +7,7 @@ description: "Who I am and what I write about."
 ---
 <img src="{{ site.baseurl }}/assets/images/blog-cover.png" alt="Álvaro Marcus" width="140" height="140" style="border-radius: 50%; float: right; margin: 0 0 1rem 1.5rem; border: 1px solid var(--border);">
 
-With a degree in Electrical Engineering and a Master's in Control and Automation. I develop solutions in software, embedded systems, and artificial intelligence, with practical experience in projects ranging from full-stack web applications to firmware for microcontrollers and computer vision models for industry.
+I'm Álvaro Marcus, with a degree in Electrical Engineering and a Master's in Control and Automation. I develop solutions in software, embedded systems, and artificial intelligence, with practical experience in projects ranging from full-stack web applications to firmware for microcontrollers and computer vision models for industry.
 
 ## Topics that appear here
 
