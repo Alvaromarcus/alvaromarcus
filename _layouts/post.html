@@ -1,0 +1,27 @@
+---
+layout: default
+---
+{%- assign lang = page.lang | default: site.lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+
+<article class="post">
+  <header class="post-header">
+    <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: t.date_format }}</time>
+    <h1 class="post-title">{{ page.title }}</h1>
+    {%- if page.tags.size > 0 %}
+    <p class="post-tags">
+      {%- for tag in page.tags %}
+      <a class="tag" href="{{ t.tags_url | relative_url }}#{{ tag | slugify }}">#{{ tag }}</a>
+      {%- endfor %}
+    </p>
+    {%- endif %}
+  </header>
+
+  <div class="prose">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+    <p><a href="{{ t.home_url | relative_url }}">&larr; {{ t.back_home }}</a></p>
+  </footer>
+</article>

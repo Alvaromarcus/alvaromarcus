@@ -1,0 +1,35 @@
+---
+layout: page
+lang: pt
+permalink: /tags/
+title: "Tags"
+---
+{%- assign lang = "pt" -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign posts = site.posts | where: "lang", lang -%}
+{%- assign all_tags = "" | split: "" -%}
+{%- for post in posts -%}
+  {%- assign all_tags = all_tags | concat: post.tags -%}
+{%- endfor -%}
+{%- assign unique_tags = all_tags | uniq | sort -%}
+
+<p>{{ t.tags_intro }}</p>
+
+{% include tag-cloud.html posts=posts lang=lang %}
+
+{% for tag in unique_tags %}
+  {%- assign tag_slug = tag | slugify -%}
+  <section class="tag-section" id="{{ tag_slug }}">
+    <h2>#{{ tag }}</h2>
+    <ul>
+      {%- for post in posts -%}
+        {%- if post.tags contains tag %}
+        <li>
+          <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: t.date_format }}</time>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+        {%- endif -%}
+      {%- endfor %}
+    </ul>
+  </section>
+{% endfor %}

@@ -1,0 +1,13 @@
+{%- assign lang = page.lang | default: site.lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p class="footer-links">
+      <a href="https://www.linkedin.com/in/{{ site.linkedin_user }}/" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/{{ site.github_user }}" rel="noopener">GitHub</a>
+      <a href="mailto:{{ site.email }}">E-mail</a>
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+    </p>
+    <p class="footer-meta">© {{ 'now' | date: "%Y" }} {{ site.author }}</p>
+  </div>
+</footer>

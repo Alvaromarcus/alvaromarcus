@@ -1,21 +1,70 @@
-theme: jekyll-theme-cayman
-title: ⚡ AM - Tech 🔌
-description: Por Alvaro Marcus - Insights sobre Indústria 4.0 e Automação.
+# ---------------------------------------------------------------
+# Configuracao do site. Editar aqui muda o site inteiro.
+# ---------------------------------------------------------------
+title: "Álvaro Marcus"
+description: "Automação, sistemas embarcados, IA aplicada à indústria e alguns hobbies."
+author: "Álvaro Marcus"
+
 url: "https://alvaromarcus.github.io"
-author: "Alvaro Marcus"
+baseurl: "/alvaromarcus"
+
+# Idioma padrao do site (usado quando o arquivo nao declara `lang`)
+lang: pt
+
+# Links do rodape / cabecalho
+email: alvaromarcus.dev@gmail.com
+github_user: Alvaromarcus
+linkedin_user: alvaromarcus
 
 twitter:
   username: alvaromarcus
 
 social:
-  name: Alvaro Marcus
+  name: Álvaro Marcus
   links:
     - https://www.linkedin.com/in/alvaromarcus/
+    - https://github.com/Alvaromarcus
 
-collections:
-  blog:
-    output: true
-    permalink: /blog/:name
+# ---------------------------------------------------------------
+# Posts
+# ---------------------------------------------------------------
+# Mantem as URLs antigas: /blog/aerobuilder/ e /blog/aerobuilder-en/
+permalink: /blog/:title/
 
+defaults:
+  # Regra geral: qualquer pagina sem layout declarado vira "page" em portugues
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+      lang: "pt"
+  # Regra mais especifica: posts usam o layout "post"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      lang: "pt"
+
+# ---------------------------------------------------------------
+# Plugins (todos suportados nativamente pelo GitHub Pages)
+# ---------------------------------------------------------------
 plugins:
   - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+
+feed:
+  path: feed.xml
+
+sass:
+  style: compressed
+
+exclude:
+  - README.md
+  - README-EN.md
+  - ESCREVENDO.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - _templates
