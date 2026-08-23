@@ -12,18 +12,18 @@
 
 ---
 
-### 🧑‍💻 Sobre Mim
+### Sobre Mim
 
 Sou desenvolvedor de software com formação em Engenharia Elétrica e Mestrado em Controle e Automação. Atuo na interseção entre **software**, **sistemas embarcados** e **inteligência artificial**, com experiência prática em projetos que vão desde aplicações web full-stack até firmware para microcontroladores e modelos de visão computacional para a indústria.
 
-- 🔭 Atualmente trabalhando com **TypeScript**, **Python** e **sistemas embarcados**
-- 🤖 Experiência com **YOLO**, **redes neurais MLP** e **visão computacional** aplicada à indústria
-- ⚡ Background sólido em **STM32**, **ESP32** e protocolos industriais (**CAN Bus**)
-- 📝 Escrevo sobre tecnologia no meu [blog](https://alvaromarcus.github.io/alvaromarcus/)
+- Atualmente trabalhando com **TypeScript**, **Python** e **sistemas embarcados**
+- Experiência com **YOLO**, **redes neurais MLP** e **visão computacional** aplicada à indústria
+- Background sólido em **STM32**, **ESP32** e protocolos industriais (**CAN Bus**)
+- Escrevo sobre tecnologia no meu [blog](https://alvaromarcus.github.io/alvaromarcus/)
 
 ---
 
-### 🛠️ Tech Stack
+### Tech Stack
 
 <div align="center">
 
@@ -63,20 +63,20 @@ Sou desenvolvedor de software com formação em Engenharia Elétrica e Mestrado 
 
 ---
 
-### 🚀 Projetos em Destaque
+### Projetos em Destaque
 
 | Projeto | Descrição | Tecnologia |
 |---------|-----------|------------|
-| [✈️ Airplane_model](https://github.com/Alvaromarcus/Airplane_model) | Designer interativo de aeromodelos RC com verificação de estabilidade em tempo real, visualização 3D e exportação PDF 1:1 | `TypeScript` `Three.js` `Vite` |
-| [📋 diagnostico-5s](https://github.com/Alvaromarcus/diagnostico-5s) | Web app para diagnóstico 5S industrial — avaliação, scoring e relatórios | `JavaScript` |
-| [👁️ YOLOV8_label_converter](https://github.com/Alvaromarcus/YOLOV8_label_converter) | Conversão de coordenadas de polígonos VGG16 para o formato YOLOv8 | `Python` `YOLO` |
-| [✈️ mlp-flight-price-prediction](https://github.com/Alvaromarcus/mlp-flight-price-prediction) | Regressão com redes MLP para estimar preços de passagens aéreas | `Python` `Keras` |
-| [🧠 deep-regression-mlp](https://github.com/Alvaromarcus/deep-regression-mlp) | Regressão com redes MLP para estimar preços de automóveis | `Python` `Keras` |
-| [🔌 api_connector](https://github.com/Alvaromarcus/api_connector) | Conector API "Diário de Obras" com Node.js e Axios | `JavaScript` `Node.js` |
+| [Airplane_model](https://github.com/Alvaromarcus/Airplane_model) | Designer interativo de aeromodelos RC com verificação de estabilidade em tempo real, visualização 3D e exportação PDF 1:1 | `TypeScript` `Three.js` `Vite` |
+| [diagnostico-5s](https://github.com/Alvaromarcus/diagnostico-5s) | Web app para diagnóstico 5S industrial — avaliação, scoring e relatórios | `JavaScript` |
+| [YOLOV8_label_converter](https://github.com/Alvaromarcus/YOLOV8_label_converter) | Conversão de coordenadas de polígonos VGG16 para o formato YOLOv8 | `Python` `YOLO` |
+| [mlp-flight-price-prediction](https://github.com/Alvaromarcus/mlp-flight-price-prediction) | Regressão com redes MLP para estimar preços de passagens aéreas | `Python` `Keras` |
+| [deep-regression-mlp](https://github.com/Alvaromarcus/deep-regression-mlp) | Regressão com redes MLP para estimar preços de automóveis | `Python` `Keras` |
+| [api_connector](https://github.com/Alvaromarcus/api_connector) | Conector API "Diário de Obras" com Node.js e Axios | `JavaScript` `Node.js` |
 
 ---
 
-### 📊 GitHub Stats
+### GitHub Stats
 
 <div align="center">
   <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Alvaromarcus&show_icons=true&theme=github_dark&hide_border=true&border_radius=10&include_all_commits=true&count_private=true&rank_icon=github&cache_seconds=86400" />
@@ -89,14 +89,14 @@ Sou desenvolvedor de software com formação em Engenharia Elétrica e Mestrado 
 
 ---
 
-### 📝 Blog / Artigos
-- ✈️ [AeroBuilder: como o software moderno pode transformar um hobby analógico](https://alvaromarcus.github.io/blog/aerobuilder)
+### Blog / Artigos
+- [AeroBuilder: como o software moderno pode transformar um hobby analógico](https://alvaromarcus.github.io/blog/aerobuilder)
 
 ---
 
 <div align="center">
 
-### 🤝 Vamos Conversar?
+###  Vamos Conversar?
 
 Estou sempre aberto a colaborações, oportunidades e discussões sobre tecnologia.
 
