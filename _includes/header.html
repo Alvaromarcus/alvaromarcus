@@ -21,7 +21,7 @@
 
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="site-title" href="{{ t.home_url | relative_url }}">{{ site.title }}</a>
+    <a class="site-title" href="{{ t.home_url | relative_url }}" style="display: flex; align-items: center; gap: 0.5rem;"><img src="{{ '/assets/images/blog-cover.png' | relative_url }}" alt="Avatar" width="28" height="28" style="border-radius: 50%;">{{ site.title }}</a>
 
     <nav class="site-nav" aria-label="{{ t.nav_home }}">
       <a href="{{ t.home_url | relative_url }}">{{ t.nav_home }}</a>

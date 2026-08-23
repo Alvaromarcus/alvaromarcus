@@ -1,10 +1,12 @@
 ---
+
 layout: page
 lang: pt
 permalink: /sobre/
 title: "Sobre"
 description: "Quem sou e sobre o que escrevo."
 ---
+<img src="{{ site.baseurl }}/assets/images/blog-cover.png" alt="Álvaro Marcus" width="140" height="140" style="border-radius: 50%; float: right; margin: 0 0 1rem 1.5rem; border: 1px solid var(--border);">
 
 Sou desenvolvedor de software com formação em Engenharia Elétrica e mestrado em
 Controle e Automação. Trabalho na interseção entre **software**, **sistemas
@@ -22,6 +24,7 @@ firmware para microcontroladores e modelos de visão computacional para a indús
 
 | Projeto | Descrição | Tecnologia |
 |---|---|---|
+
 | [Airplane_model](https://github.com/Alvaromarcus/Airplane_model) | Designer interativo de aeromodelos RC com verificação de estabilidade, visualização 3D e exportação de gabarito 1:1 | TypeScript, Three.js, Vite |
 | [diagnostico-5s](https://github.com/Alvaromarcus/diagnostico-5s) | Web app para diagnóstico 5S industrial — avaliação, pontuação e relatórios | JavaScript |
 | [YOLOV8_label_converter](https://github.com/Alvaromarcus/YOLOV8_label_converter) | Conversão de coordenadas de polígonos VGG16 para o formato YOLOv8 | Python, YOLO |
