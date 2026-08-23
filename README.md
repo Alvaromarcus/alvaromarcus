@@ -102,7 +102,7 @@ Estou sempre aberto a colaborações, oportunidades e discussões sobre tecnolog
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alvaromarcus/)
 [![Blog](https://img.shields.io/badge/-Blog-FF5722?style=flat-square&logo=hugo&logoColor=white)](https://alvaromarcus.github.io/alvaromarcus/)
-[![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:alvaromarcus.dev@gmail.com)
+[![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:alvaromarcus.projetos@gmail.com)
 
 ---
 

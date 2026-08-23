@@ -33,4 +33,4 @@ firmware para microcontroladores e modelos de visão computacional para a indús
 
 - [LinkedIn](https://www.linkedin.com/in/alvaromarcus/)
 - [GitHub](https://github.com/Alvaromarcus)
-- [alvaromarcus.dev@gmail.com](mailto:alvaromarcus.dev@gmail.com)
+- [alvaromarcus.projetos@gmail.com](mailto:alvaromarcus.projetos@gmail.com)

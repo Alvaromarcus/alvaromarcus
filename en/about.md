@@ -34,4 +34,4 @@ models for industry.
 
 - [LinkedIn](https://www.linkedin.com/in/alvaromarcus/)
 - [GitHub](https://github.com/Alvaromarcus)
-- [alvaromarcus.dev@gmail.com](mailto:alvaromarcus.dev@gmail.com)
+- [alvaromarcus.projetos@gmail.com](mailto:alvaromarcus.projetos@gmail.com)
